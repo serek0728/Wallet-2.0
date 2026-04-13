@@ -4,8 +4,7 @@ Wallet 2.0 is a personal finance web app built as a portfolio project for practi
 
 The application allows users to manage income and expenses, track balance, categorize transactions, and store data locally in the browser.
 
-## 🚀 Live Demo
-[Add your live demo link here]
+## 🚀 [LIVE DEMO](https://serek0728.github.io/Wallet-2.0/)
 
 ## 📸 Preview
 ### Light mode
