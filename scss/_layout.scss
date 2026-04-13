@@ -1,0 +1,80 @@
+.app-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: $space-lg;
+	padding: $space-xl;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.app-header__branding {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.app-title {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+	margin: 0;
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: $color-heading;
+}
+
+.app-subtitle {
+	margin: 0;
+	color: $color-text-muted;
+	font-size: 0.95rem;
+}
+
+body.dark-mode .app-title {
+	color: $dark-heading;
+}
+
+body.dark-mode .app-subtitle {
+	color: $dark-text-muted;
+}
+
+.app-main {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 $space-xl $space-2xl;
+	display: flex;
+	flex-direction: column;
+	gap: $space-xl;
+}
+
+.summary-section {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: $space-lg;
+}
+
+.actions-section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: $space-md;
+}
+
+.transactions-section {
+	background: $color-surface;
+	border-radius: $radius-lg;
+	padding: $space-xl;
+	box-shadow: $shadow-sm;
+	border: 1px solid $color-border;
+}
+
+.transactions-list {
+	display: flex;
+	flex-direction: column;
+	gap: $space-md;
+	margin-top: $space-lg;
+}
+
+body.dark-mode .transactions-section {
+	background: $dark-surface;
+	border-color: $dark-border;
+}

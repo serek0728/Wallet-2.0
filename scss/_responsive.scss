@@ -1,0 +1,59 @@
+@media (min-width: $bp-md) {
+	.summary-section {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.transactions-section {
+		padding: 2rem;
+	}
+}
+
+@media (max-width: $bp-md) {
+	.app-header,
+	.app-main {
+		padding-left: $space-lg;
+		padding-right: $space-lg;
+	}
+
+	.app-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.transaction-item {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.transaction-item__right {
+		width: 100%;
+		justify-content: space-between;
+	}
+
+	.form-actions {
+		flex-direction: column-reverse;
+	}
+
+	.form-actions .btn {
+		width: 100%;
+	}
+}
+
+@media (max-width: $bp-sm) {
+	.app-title {
+		font-size: 1.5rem;
+	}
+
+	.summary-card__value {
+		font-size: 1.7rem;
+	}
+
+	.modal {
+		padding: $space-lg;
+		border-radius: $radius-lg;
+	}
+
+	.transactions-section {
+		padding: $space-lg;
+	}
+}

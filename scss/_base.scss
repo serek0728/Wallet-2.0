@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	font-family: $font-main;
+	background: $color-bg;
+	color: $color-text;
+	line-height: 1.6;
+	min-height: 100vh;
+	transition:
+		background $transition-medium,
+		color $transition-medium;
+}
+
+body.dark-mode {
+	background: $dark-bg;
+	color: $dark-text;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+input,
+select,
+textarea {
+	width: 100%;
+	border: 1px solid $color-border;
+	border-radius: $radius-sm;
+	padding: 0.9rem 1rem;
+	background: $color-surface;
+	color: $color-text;
+	transition:
+		border-color $transition-fast,
+		box-shadow $transition-fast;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	border-color: $color-primary;
+	box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
+}
+
+textarea {
+	resize: vertical;
+	min-height: 100px;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+	background: $dark-surface;
+	border-color: $dark-border;
+	color: $dark-text;
+}
+
+.hidden {
+	display: none !important;
+}
