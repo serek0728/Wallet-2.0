@@ -58,4 +58,4 @@ export to CSV
 
 ## 👨‍💻 Author
 
-Created as a frontend portfolio project by ##serek0728.
+Created as a frontend portfolio project by **serek0728**.
